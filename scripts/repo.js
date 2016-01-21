@@ -3,15 +3,13 @@
   repoData.all = [];
   repoData.grabRepo = function (callback){
     $.ajax({
-      url: 'https://api.github.com/users/ishidas/repos' + '?per_page=5&sort=updated',
+      url: '/github/users/ishidas/repos?per_page=100&sort=updated',
       type: 'GET',
-      headers: {'Authorization': 'token ' + GITHUB_TOKEN },
       success: function(data,message,xhr){
-        repoData.all = data;
-        console.log(repoData.all);
+        reposData.all = data;
       }
     })
-      .done(callback);
+    .done(callback);
   };
 
   repoData.grabRepo();
