@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+    <link href='https://fonts.googleapis.com/css?family=Rosario:400,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="vendor/normalize.css">
+    <link rel="stylesheet" href="vendor/skeleton.css">
+    <link rel="stylesheet" href="iconstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="work">
+        <h4 id="eduname">{{companyName}}</h4>
+        <address><a href="{{companyLink}}">{{companyName}}</a></address>
+        <p>{{{experience}}}</p>
+      </div>
+    </script>
+  </head>
+  <body>
+    <!-- leaves 1-10 -->
+    <div class="petals1"></div>
+    <div class="petals2"></div>
+    <div class="petals3"></div>
+    <div class="petals4"></div>
+    <div class="petals5"></div>
+    <div class="petals6"></div>
+    <div class="petals7"></div>
+    <div class="petals8"></div>
+    <div class="petals9"></div>
+    <div class="petals10"></div><!--end of leaves-->
+    <header class="twelve columns">
+      <h1 class="twelve columns">Sawako Ishida</h1>
+      <nav class="nav-section">
+        <img id="icon-burger" class="one columns offset-by-eleven" class="hamburger-menu" src="img/hamburger.png" alt="hamburger menu">
+        <ul class="twelve columns">
+          <li class="icon-home" data-content="home"><a href="/">Home</a></li>
+          <li class="icon-pacman" data-content="edu"><a href="/about">About</a></li>
+          <li class="icon-camera" data-content="gallerytab"><a>Gallery</a></li>
+          <li class="icon-pen" data-content="workjob"><a>Work Experiences</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </header>
+    <section id="edu" data-content="edusection">
+      <article class="edutemplate">
+        <h4 id="eduname" data-name="eduSchoolName">School Name: <span></span></h4>
+        <p data-major="eduMajor">Major: <span></span></p>
+        <p data-degree="eduDegree">Degree: <span></span></p>
+        <p data-status="eduStatus">Status: <span></span></p>
+        <address><a href="">School Web Site Link</a></address>
+        <hr>
+      </article>
+    </section>
+    <section id="home">
+      <img id="first-img" src="img/sakura.jpg" alt="image of cherry blossom">
+      <img src="img/downtown.jpg" alt="image of downtown Seattle">
+      <img id="oahupic" src="img/oahu.jpg" alt="image of Oahu">
+      <p id="home-p">Bonbon jelly-o gingerbread lemon drops. Danish chocolate cake marshmallow fruitcake jelly. Wafer chocolate bar marzipan soufflé sweet roll muffin ice cream fruitcake. Toffee toffee lemon drops biscuit marshmallow candy canes toffee candy canes. Muffin lemon drops cake. Cupcake wafer pudding cheesecake jelly-o pie sweet cotton candy sugar plum. Cake marshmallow liquorice wafer chupa chups icing apple pie. Sweet roll gummies tootsie roll croissant halvah candy canes cake oat cake. Pie jelly-o marshmallow.
+Cheesecake lollipop tootsie roll sugar plum macaroon macaroon chocolate bar wafer. Apple pie fruitcake sugar plum. Liquorice pie biscuit tart croissant. Jujubes croissant danish marzipan chocolate pie halvah. Cake danish soufflé cotton candy muffin jujubes. Jelly-o brownie jujubes sugar plum cheesecake icing sweet roll. Bear claw chocolate cake apple pie cotton candy chocolate cake. Fruitcake macaroon tiramisu icing tart brownie cotton candy bear claw biscuit. Dragée sesame snaps pastry.</p>
+    </section>
+    <section id="photos" class="photo-gallery"></section>
+    <section id="workjob"></section>
+    <!-- <article class="jobtemplate">
+    </article> -->
+    <footer>
+      <ul>
+        <li class="icon-github"><a href="https://github.com/ishidas">GitHub</a></li>
+        <li class="icon-pinterest"><a href="https://www.pinterest.com/sawa1134/">Pinterest</a></li>
+        <li class="icon-linkedin"><a href="https://www.linkedin.com/in/sawako-ishida-354bba101">LinkedIn</a></li>
+      </ul>
+      <p id=footer-fun></p>
+    </footer>
+    <!-- <script src="portfolioinfo.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script src="scripts/app.js"></script>
+
+    <script src="scripts/repo.js"></script>
+    <script src="scripts/repoView.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/indexController.js"></script>
+    <script src="scripts/routes.js"></script>
+  </body>
+</html>

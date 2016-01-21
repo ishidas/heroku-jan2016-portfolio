@@ -1,0 +1,192 @@
+
+
+.petals1 {
+  position: relative;
+
+  width: 20px;
+  height: 20px;
+  margin: 0px!important;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 1111;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride;
+-webkit-animation-duration: 18s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride {
+  0%{-webkit-transform: translate(-50px,-200px) rotate(80deg);}
+  100%{-webkit-transform: translate(300px, 999px) ;}
+}
+
+.petals2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 2222;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride2;
+-webkit-animation-duration: 20s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride2 {
+  0%{-webkit-transform: translate(500px,-200px) rotate(-80deg);}
+  100%{-webkit-transform: translate(300px, 999px) ;}
+}
+
+.petals3 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 3333;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride3;
+-webkit-animation-duration: 19s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride3 {
+  0%{-webkit-transform: translate(1000px,-200px) rotate(80deg);}
+  100%{-webkit-transform: translate(500px, 999px) ;}
+}
+
+.petals5 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 4444;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride5;
+-webkit-animation-duration: 18s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride5 {
+  0%{-webkit-transform: translate(600px,-200px) rotate(90deg);}
+  100%{-webkit-transform: translate(600px, 999px) ;}
+}
+
+.petals6 {
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 5555;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride6;
+-webkit-animation-duration: 22s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride6 {
+  0%{-webkit-transform: translate(900px,-200px) rotate(-100deg);}
+  100%{-webkit-transform: translate(350px, 999px) ;}
+}
+
+.petals7 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 6666;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride7;
+-webkit-animation-duration: 18s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride7 {
+  0%{-webkit-transform: translate(900px,-200px) rotate(-80deg);}
+  100%{-webkit-transform: translate(320px, 999px) ;}
+}
+
+.petals8 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 6666;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride8;
+-webkit-animation-duration: 20s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride8 {
+  0%{-webkit-transform: translate(60px,-200px) rotate(-80deg);}
+  100%{-webkit-transform: translate(150px, 999px) ;}
+}
+
+.petals9 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 6666;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride9;
+-webkit-animation-duration: 17s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride9 {
+  0%{-webkit-transform: translate(1200px,-200px) rotate(80deg);}
+  100%{-webkit-transform: translate(200px, 999px) ;}
+}
+
+.petals10 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  background-color: rgba(131, 193, 89, 0.6);
+  z-index: 6666;
+/*-webkit-animation-fill-mode: forward;*/
+-webkit-animation-name: ride10;
+-webkit-animation-duration: 16s;
+-webkit-animation-timing-function: ease-in;
+-webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ride10 {
+  0%{-webkit-transform: translate(10px,-200px) rotate(100deg);}
+  100%{-webkit-transform: translate(280px, 999px) ;}
+}

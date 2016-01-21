@@ -1,0 +1,16 @@
+[
+  {
+    "schoolName": "My School Name1",
+    "degree": "BS",
+    "major": "Yay I Have A Degree",
+    "schoolLink": "https://en.wikipedia.org/wiki/School",
+    "status": "Graduated"
+  },
+  {
+    "schoolName": "Code Fellows",
+    "degree": "Certificate",
+    "major": "Programming",
+    "schoolLink": "https://www.codefellows.org/",
+    "status": "Currently Enrolled"
+  }
+]
