@@ -9,7 +9,7 @@
     this.degree = sth.degree;
     this.major = sth.major;
     this.schoolLink = sth.schoolLink;
-    this.status = sth.status
+    this.status = sth.status;
   }
 
   //Generating School Info
@@ -44,23 +44,23 @@
       localStorage.schoolRaw = JSON.stringify(data);
       localStorage.etag = xhr.getResponseHeader('eTag');
       renderLocalSchoolData();
-      });
-        renderToHtml();
+    });
+    renderToHtml();
   }
 
 
   function checkUpdate (){
     $.ajax({
-            type: 'HEAD',
-            url:  'portfolioinfo.json',
-            complete: function(xhr){
-              var eTag = xhr.getResponseHeader('eTag');
-              if(localStorage.etag !== eTag){
-                update();
-              } else {
-                renderLocalSchoolData();
-              }
-            }
+      type: 'HEAD',
+      url:  'portfolioinfo.json',
+      complete: function(xhr){
+        var eTag = xhr.getResponseHeader('eTag');
+        if(localStorage.etag !== eTag){
+          update();
+        } else {
+          renderLocalSchoolData();
+        }
+      }
     });
   }
   // checkUpdate();
@@ -68,32 +68,33 @@
 
 
   function renderToHtml(){
-  schoolObj.forEach(function(a){
-    var $newContentBox = $('article.edutemplate').clone();
-    $newContentBox.find('#eduname').text(a.schoolName);
-    $newContentBox.find('[data-major] span').text(a.major);
-    $newContentBox.find('[data-degree] span').text(a.degree);
-    $newContentBox.find('[data-status] span').text(a.status);
-    $newContentBox.find('.edutemplate address a').attr('href',a.schoolLink);
-    $newContentBox.removeClass('edutemplate');
-    $('#edu').append($newContentBox);
-  });
+    schoolObj.forEach(function(a){
+      var $newContentBox = $('article.edutemplate').clone();
+      $newContentBox.find('#eduname').text(a.schoolName);
+      $newContentBox.find('[data-major] span').text(a.major);
+      $newContentBox.find('[data-degree] span').text(a.degree);
+      $newContentBox.find('[data-status] span').text(a.status);
+      $newContentBox.find('.edutemplate address a').attr('href',a.schoolLink);
+      $newContentBox.removeClass('edutemplate');
+      $('#edu').append($newContentBox);
+    });
   }
 
   function renderLocalSchoolData () {
     var getBackShoolObj = JSON.parse(localStorage.getItem('schoolRaw'));
     getBackShoolObj.map(function(x){
       schoolObj.push(x);
-    })
+    });
     renderToHtml();
   }
 
 
   $('.nav-section img').on('click touchStart',function(){
     if($(window).width() < 640){
-    $('.nav-section').find('ul').slideToggle();
-  } else { $('.nav-section').show(); }
-  })
+      $('.nav-section').find('ul').slideToggle();
+    }
+    else { $('.nav-section').show(); }
+  });
 
   function stickyHeaders(){
 
@@ -101,10 +102,10 @@
     var $stickableWindow = $(window).scrollTop();
     $(window).on('scroll', function(){
       $stickyHeader.attr('id','sticky');
-    })
+    });
   }
   stickyHeaders();
 
   window.schoolObj = schoolObj;
   window.checkUpdate = checkUpdate;
-})(window)
+})(window);

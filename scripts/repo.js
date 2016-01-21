@@ -20,5 +20,4 @@
     });
   };
   window.repoData = repoData;
-
 })(window);

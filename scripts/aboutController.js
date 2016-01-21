@@ -5,6 +5,6 @@
     $('body section').hide();
     $('#edu').show();
     repoData.grabRepo(repoView.index());
-  }
+  };
   window.aboutController = aboutController;
 })(window);
